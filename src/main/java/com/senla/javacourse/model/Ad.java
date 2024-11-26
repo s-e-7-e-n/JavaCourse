@@ -53,7 +53,8 @@ public class Ad {
     this.description = description;
   }
   
-  @Override public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o)
       return true;
     if (o == null || getClass() != o.getClass())
@@ -63,7 +64,8 @@ public class Ad {
       && Objects.equals(getDescription(), ad.getDescription());
   }
   
-  @Override public int hashCode() {
+  @Override
+  public int hashCode() {
     return Objects.hash(getTitle(), getPrice(), getDescription());
   }
 }
